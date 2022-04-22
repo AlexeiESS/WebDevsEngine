@@ -1,0 +1,39 @@
+.form_login {
+	text-align: center;
+}
+.okoshexnko {
+  width: 12%;
+  text-align: center;
+  margin: 8px 0;
+  box-sizing: border-box;
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid red;
+  outline:none;
+  font-size: 120%;
+}
+
+body {
+	animation: slideInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+.butvxod {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 15px;
+}
+@media screen and (max-width: 1200px) {
+.okoshexnko {
+  width: 15%;
+}
+.butvxod {
+  font-size: 120%;
+  color: black;
+}
+}
