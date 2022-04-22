@@ -10,6 +10,7 @@ if(isset($_POST['goinstl']))
 	$name = $_POST['name'];
 	$config = '$config';
 	$instalcfgtobd = "<?php $config = array('db_host'     => '".$host."' , 'db_user'     => '".$user."' , 'db_pass'     => '".$password."' , 'db_name'     => '".$name."',); ?>";
+	mkdir("../configs", 0700);
 	$fp = fopen("../configs/config.php", "w");
 	fwrite($fp, $instalcfgtobd);
 	chmod("../configs/config.php", 0600);
