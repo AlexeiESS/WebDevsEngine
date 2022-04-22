@@ -5,8 +5,8 @@ $conn = new mysql($config['db_host'], $config['db_user'], $config['db_pass'], $c
 function createtabelsmysql()
 {
 	global $conn;
-	$admintable = "CREATE TABLE admins (id INTEGER AUTO_INCREMENT PRIMARY KEY, login VARCHAR(30), password VARCHAR(60));";$conn->query($admintable);
-	$userstable = "CREATE TABLE users (id INTEGER AUTO_INCREMENT PRIMARY KEY, login VARCHAR(30), password VARCHAR(60), email VARCHAR(40));";$conn->query($userstable);
+	$conn->query("CREATE TABLE admins (id INTEGER AUTO_INCREMENT PRIMARY KEY, login VARCHAR(30), password VARCHAR(60));");
+	$conn->query("CREATE TABLE users (id INTEGER AUTO_INCREMENT PRIMARY KEY, login VARCHAR(30), password VARCHAR(60), email VARCHAR(40));");
 	return 1;
 }
 function addadmin($login, $password)
