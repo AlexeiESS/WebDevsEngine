@@ -13,7 +13,7 @@ if(isset($_POST['goinstl']))
 	mkdir("../configs", 0700);
 	$fp = fopen("../configs/config.php", "w");
 	fwrite($fp, $instalcfgtobd);
-	chmod("../configs/config.php", 0600);
+	chmod("../configs/config.php", 0400);
 	fclose($fp);
 	require_once('../configs/config.php');
 	if(!$link = mysqli_connect($config['db_host'], $config['db_user'], $config['db_pass'], $config['db_name']))
