@@ -12,7 +12,7 @@ class temp
 		global $set;
         $shabl = 'typex';
 		$root = __DIR__;
-        define('ROOT',$root.'/template/'.$set['temp'].'/');
+        define('ROOT',$root.'Engine/templates/'.$set['temp'].'/');
     }
 
     function create($tpl)

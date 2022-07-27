@@ -26,7 +26,7 @@ function select_template()
 }
 function set_template($temp)
 {
-
+	global $conn;
 
 
 }

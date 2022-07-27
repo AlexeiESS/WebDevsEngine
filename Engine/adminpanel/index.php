@@ -4,7 +4,7 @@ if(isset($_SESSION['admin']))
 	{
 ?>
 
-//Редактирование шаблона
+<!---Редактирование шаблона--->
 <form method="POST" name="templates_options">
 	<select name="templates">
 	<?php
@@ -21,6 +21,6 @@ if(isset($_SESSION['admin']))
 <?php
 	}else
 	{
-		header("Location: ");
+		header("Location: ..../index.php");
 	}
 ?>
