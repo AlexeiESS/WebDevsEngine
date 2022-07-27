@@ -1,5 +1,5 @@
 <?php
-include("");
+require_once("../adminsql/adminsfunctions.php");
 class temp 
 {
     var $manuale = array();

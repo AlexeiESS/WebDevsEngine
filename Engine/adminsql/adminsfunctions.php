@@ -15,6 +15,33 @@ function checkadmin($login, $password)
 		return 0;
 	}
 }
+function select_template()
+{
+	if ($handle = opendir("../templates")) {
+   	 while (false !== ($templates = readdir($handle))) {  
+    	        echo '<option name="'.$templates.'">'.$templates.'</option>';
+  	 }
+  	  closedir($handle); 
+	}
+}
+function set_template($temp)
+{
+
+
+
+}
+
+
+
+
+
+
+if(isset($_POST['']))
+{
+
+}
+
+
 if(isset($_POST['start_logining_admin']))
 {
 	if(checkadmin($_POST['loginadm'],$_POST['passwordadm'])==1)
