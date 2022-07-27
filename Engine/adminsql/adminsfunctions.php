@@ -27,8 +27,8 @@ function select_template()
 function set_template($temp)
 {
 	global $conn;
-
-
+	$conn->query("UPDATE template SET template = '$temp' WHERE id = '1'");
+	return 1;
 }
 
 
@@ -36,9 +36,9 @@ function set_template($temp)
 
 
 
-if(isset($_POST['']))
+if(isset($_POST['change_template']))
 {
-
+	set_template($_POST['templates']);
 }
 
 

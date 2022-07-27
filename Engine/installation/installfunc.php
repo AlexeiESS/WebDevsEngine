@@ -8,6 +8,7 @@ function createtabelsmysql()
 	$conn->query("CREATE TABLE admins (id INTEGER AUTO_INCREMENT PRIMARY KEY, login VARCHAR(30), password VARCHAR(60));");
 	$conn->query("CREATE TABLE users (id INTEGER AUTO_INCREMENT PRIMARY KEY, login VARCHAR(30), password VARCHAR(60), email VARCHAR(40));");
 	$conn->query("CREATE TABLE template (id INTEGER AUTO_INCREMENT PRIMARY KEY, template VARCHAR(35));");
+	$conn->query("INSERT template(id, template) VALUES (NULL, `default`)");
 	return 1;
 }
 function addadmin($login, $password)
