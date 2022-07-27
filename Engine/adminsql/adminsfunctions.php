@@ -19,8 +19,10 @@ function select_template()
 {
 	if ($handle = opendir("../templates")) {
    	 while (false !== ($templates = readdir($handle))) {  
-    	        echo '<option name="'.$templates.'">'.$templates.'</option>';
-  	 }
+   	 			if(!is_dir($templates)){
+    		        echo '<option name="'.$templates.'">'.$templates.'</option>';
+  		 }
+  	}
   	  closedir($handle); 
 	}
 }

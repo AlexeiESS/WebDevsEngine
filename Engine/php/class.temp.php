@@ -8,9 +8,7 @@ class temp
 	
     function __construct()
     {
-       // echo $nav->temp();
 		global $set;
-        $shabl = 'typex';
 		$root = __DIR__;
         define('ROOT',$root.'Engine/templates/'.$set['temp'].'/');
     }
